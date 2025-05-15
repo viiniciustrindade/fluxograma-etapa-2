@@ -42,3 +42,20 @@ Calcular valor total
 Perguntar se deseja comprar outro
 
 Mostrar valor total da compra ao final
+
+== 3. Simulador de Lanchonete
+
+Cardápio:
+** Hambúrguer R$10
+** Batata R$5
+** Refrigerante R$4
+
+Cliente escolhe item e quantidade
+
+Repetir até finalizar pedido
+
+Calcular total
+
+Aplicar 5% de taxa de serviço
+
+Mostrar nota com itens e valor final
