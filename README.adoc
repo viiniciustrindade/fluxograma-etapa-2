@@ -193,3 +193,33 @@ Crie um fluxograma que:
 10. Se não, encerra.
 
 
+== 13. Simulador de Caminhada Virtual
+
+Crie um fluxograma que:
+
+1. Pergunta quantos passos o usuário deseja caminhar.
+2. Para cada passo, mostra "Passo X dado".
+3. A cada 5 passos, mostra: "Você encontrou uma árvore!".
+4. A cada 10 passos, mostra: "Você ganhou um bônus de energia!".
+5. Ao final, mostra a distância total (passos × 0,8 metros).
+6. Mostra: "Parabéns pela jornada!".
+7. Pergunta se quer caminhar novamente.
+8. Se sim, volta ao passo 1.
+9. Se não, mostra "Fim da caminhada".
+10. Encerra.
+
+
+== 14. Simulador de Quiz de Conhecimentos Gerais
+
+Crie um fluxograma que:
+
+1. Mostra a primeira pergunta (ex: Capital do Brasil?).
+2. Recebe a resposta.
+3. Informa se está correta ou errada.
+4. Passa para a próxima pergunta (total de 3 perguntas).
+5. Para cada resposta correta, soma 1 ponto.
+6. Ao final, mostra a pontuação total.
+7. Se nota = 3, mostra: "Gênio!".
+8. Se nota = 2, mostra: "Muito bem!".
+9. Se nota <= 1, mostra: "Tente novamente!".
+10. Pergunta se quer jogar novamente.
