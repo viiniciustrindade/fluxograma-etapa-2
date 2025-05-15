@@ -1,0 +1,166 @@
+= Exercícios Avançados de Fluxograma
+Vinicius - Preparação para Avaliação Final
+
+== Instruções
+Você deverá criar o fluxograma de cada cenário descrito abaixo, utilizando estruturas de entrada, saída, decisão, repetição e validação conforme o contexto. Recomenda-se desenhar os fluxogramas em papel.
+
+== 🔸 Etapa 4: Desafios Sistêmicos para Avaliação
+
+*Objetivo:* Criar fluxogramas completos de sistemas com validações, menus e lógica estruturada.
+
+31. Sistema de Gestão de Alunos com Relatório Final
+
+* Menu: \[1] Cadastrar aluno, \[2] Ver relatório, \[3] Sair
+* Cadastrar: nome, idade (≥ 16), 3 notas
+* Calcular média e classificar: Aprovado (≥7), Recuperação (5-6.9), Reprovado (<5)
+* Relatório: número de alunos, estatísticas de aprovação e média geral
+* Loop até opção "Sair"
+
+32. Simulador de Loja com Carrinho de Compras
+
+* Produtos: TV (1500), Celular (900), Fone (200)
+* Menu de produtos, adicionar quantidade por item
+* Calcular subtotal, aplicar cupom “DESC20” se inserido
+* Pagamento: validar valor pago ≥ total, exibir troco
+
+33. Simulador de RH com Cadastro e Férias
+
+* Menu: \[1] Cadastrar, \[2] Calcular férias, \[3] Listar, \[4] Sair
+* Funcionário: nome, matrícula, salário (>1000)
+* Férias: salário + 1/3
+* Operações até sair
+
+34. Sistema de Votação com Verificação de CPF
+
+* CPF deve ter 11 dígitos e não pode repetir
+* Candidatos: A, B, C
+* Menu: votar, ver parcial, encerrar
+* Resultado: votos por candidato, vencedor ou empate
+
+35. Controle Financeiro Pessoal
+
+* Menu: \[1] Receita, \[2] Despesa, \[3] Relatório, \[4] Sair
+* Registro: valor positivo, descrição, data
+* Relatório: total de receitas, despesas, saldo
+* Múltiplos lançamentos
+
+36. Sistema de Agendamento de Consultas
+
+* Menu: \[1] Agendar, \[2] Ver agenda, \[3] Cancelar, \[4] Sair
+* Dados: nome, especialidade, dia e horário
+* Validar se horário está ocupado
+* Cancelar por nome
+
+37. Cadastro de Veículos com Classificação
+
+* Menu: \[1] Cadastrar, \[2] Listar, \[3] Sair
+* Veículo: placa, modelo, ano, tipo
+* Classificação: <2000 = Antigo, ≥2020 = Novo, senão = Neutro
+
+38. Sistema de Biblioteca com Empréstimo
+
+* Menu: \[1] Cadastrar livro, \[2] Emprestar, \[3] Devolver, \[4] Relatório, \[5] Sair
+* Dados: título, autor, código
+* Emprestar: validar disponibilidade
+* Relatório: listar todos os livros e seu status
+
+39. Simulador de Restaurante
+
+* Menu de pratos com preço
+* Pedido por prato e quantidade
+* Adicionar múltiplos itens
+* Total com 10% taxa de serviço
+* Pagamento com troco
+
+40. Atendimento Prioritário
+
+* Menu: \[1] Gerar senha, \[2] Atender, \[3] Ver fila, \[4] Sair
+* Gerar: nome e tipo (prioritário > 60 anos ou comum)
+* Atendimento: 2 prioritários para cada comum
+* Manter fila até sair
+
+== 🔷 Etapa 5: Desafios Completos com Integração de Lógicas
+
+*Objetivo:* Resolver cenários complexos simulando sistemas reais com múltiplas entradas, menus e controle de fluxo.
+
+41. Sistema de Reservas de Hotel
+
+* Menu: [1] Reservar quarto, [2] Consultar reservas, [3] Cancelar reserva, [4] Sair
+* Dados da reserva: nome, CPF (validar 11 dígitos), dias, tipo do quarto (simples, duplo, suíte)
+* Tarifas variáveis por tipo de quarto e quantidade de dias
+* Impedir reserva de mesmo CPF
+* Consultar e cancelar reservas por CPF
+
+42. Sistema de Controle de Estoque
+
+* Menu: [1] Adicionar item, [2] Baixar item, [3] Relatório, [4] Sair
+* Armazenar: nome do produto, código, quantidade
+* Impedir cadastro duplicado por código
+* Baixar: verificar se há estoque suficiente
+* Relatório: listar itens com quantidade < 5 como “estoque baixo”
+
+43. Sistema de Cadastro Acadêmico com Busca
+
+* Menu: [1] Cadastrar aluno, [2] Buscar aluno por nome, [3] Exibir todos, [4] Sair
+* Dados: nome, matrícula, curso
+* Impedir matrículas duplicadas
+* Exibir dados dos alunos encontrados na busca parcial por nome
+
+44. Simulador de Caixa de Supermercado
+
+* Permitir múltiplas compras
+* Registrar: produto, preço, quantidade
+* Calcular subtotal, total e aplicar 5% de desconto se total > R$ 200
+* Exibir recibo com todos os itens
+* Validar pagamento com valor suficiente e exibir troco
+
+45. Sistema de Atendimento Médico Simples
+
+* Menu: [1] Cadastrar paciente, [2] Atender paciente, [3] Listar fila, [4] Sair
+* Prioridade: pacientes ≥ 65 anos atendidos antes dos demais
+* Registro: nome, idade, motivo da consulta
+* Atendimento respeita a prioridade até esgotar a fila
+
+46. Simulador de Caixa de Banco
+
+* Menu: [1] Criar conta, [2] Depositar, [3] Sacar, [4] Extrato, [5] Sair
+* Dados: nome, número da conta, saldo
+* Validar: saques ≤ saldo e valor positivo
+* Extrato: mostrar últimas 5 operações
+
+47. Sistema de Vagas de Estacionamento
+
+* Menu: [1] Estacionar, [2] Retirar veículo, [3] Listar vagas, [4] Sair
+* Vagas: 10 vagas disponíveis
+* Registrar: placa, horário de entrada
+* Calcular tarifa por hora (mínimo 1h)
+* Validar se vaga está disponível antes de estacionar
+
+48. Agenda Telefônica Digital
+
+* Menu: [1] Adicionar contato, [2] Buscar contato, [3] Listar todos, [4] Excluir contato, [5] Sair
+* Dados: nome, telefone (validar formato)
+* Impedir duplicidade de telefone
+* Buscar por parte do nome
+
+49. Sistema de Cadastro de Produtos com Faixa de Preço
+
+* Menu: [1] Adicionar produto, [2] Listar por faixa de preço, [3] Ver todos, [4] Sair
+* Produto: nome, código, preço
+* Permitir busca por produtos com preços entre dois valores
+* Validar preços positivos e código único
+
+50. Simulador de Sistema de Transporte Urbano
+
+* Menu: [1] Comprar bilhete, [2] Validar bilhete, [3] Relatório, [4] Sair
+* Bilhete: número, tipo (unitário, diário, mensal)
+* Validação: verificar se bilhete é válido
+* Relatório: quantidade por tipo e bilhetes validados
+
+*Desafio Final:* Crie um fluxograma que resolva um problema real ou simulado envolvendo:
+
+* Entrada e saída de dados
+* Decisões condicionais
+* Processos repetitivos
+
+Apresente sua solução com explicação do problema, fluxograma e lógica implementada.
