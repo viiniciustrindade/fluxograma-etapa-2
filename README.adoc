@@ -59,3 +59,16 @@ Calcular total
 Aplicar 5% de taxa de serviço
 
 Mostrar nota com itens e valor final
+
+== 4. Simulador de Caixa de Loja com Múltiplos Produtos
+
+Desenvolva um fluxograma que:
+
+* Pergunta quantos produtos o cliente deseja comprar.
+* Para cada produto:
+** Solicita nome, quantidade e preço unitário.
+** Calcula o subtotal (quantidade * preço).
+* Soma o total da compra.
+* Se o total for superior a R$ 300, aplica 10% de desconto.
+* Solicita valor pago e calcula o troco.
+* Exibe todos os produtos comprados, total, desconto (se houver) e troco.
