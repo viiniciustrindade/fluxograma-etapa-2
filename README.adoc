@@ -72,3 +72,14 @@ Desenvolva um fluxograma que:
 * Se o total for superior a R$ 300, aplica 10% de desconto.
 * Solicita valor pago e calcula o troco.
 * Exibe todos os produtos comprados, total, desconto (se houver) e troco.
+
+== 5. Cadastro e Avaliação de Candidatos
+
+Crie um fluxograma que:
+
+* Permita cadastrar nome, idade e nota de teste de 5 candidatos.
+* Apenas candidatos com idade ≥ 18 e nota ≥ 7 são considerados "Aprovados".
+* Após o cadastro, exibe um relatório com:
+** Total de aprovados e reprovados.
+** Nome dos aprovados.
+** Média de notas da turma.
