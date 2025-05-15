@@ -8,76 +8,160 @@ Você deverá criar o fluxograma de cada cenário descrito abaixo, utilizando es
 
 *Objetivo:* Criar fluxogramas completos de sistemas com validações, menus e lógica estruturada.
 
-31. Sistema de Gestão de Alunos com Relatório Final
+== 🧠 1. Sistema de Gestão de Alunos com Relatório Final
 
-* Menu: \[1] Cadastrar aluno, \[2] Ver relatório, \[3] Sair
-* Cadastrar: nome, idade (≥ 16), 3 notas
-* Calcular média e classificar: Aprovado (≥7), Recuperação (5-6.9), Reprovado (<5)
-* Relatório: número de alunos, estatísticas de aprovação e média geral
-* Loop até opção "Sair"
+* Menu inicial com opções:
+** [1] Cadastrar aluno
+** [2] Ver relatório
+** [3] Sair
+* Cadastro:
+** Nome
+** Idade (validar se ≥ 16)
+** 3 notas
+* Cálculo da média:
+** Aprovado: média ≥ 7
+** Recuperação: 5 ≤ média < 7
+** Reprovado: média < 5
+* Relatório:
+** Quantidade total de alunos
+** Total de aprovados, em recuperação e reprovados
+** Média geral da turma
+* Repetir até a opção "Sair"
 
-32. Simulador de Loja com Carrinho de Compras
+== 🧠 2. Simulador de Loja com Carrinho de Compras
 
-* Produtos: TV (1500), Celular (900), Fone (200)
-* Menu de produtos, adicionar quantidade por item
-* Calcular subtotal, aplicar cupom “DESC20” se inserido
-* Pagamento: validar valor pago ≥ total, exibir troco
+* Produtos fixos:
+** TV - R$1500
+** Celular - R$900
+** Fone - R$200
+* Menu de produtos com opção para adicionar ao carrinho
+** Para cada produto: perguntar quantidade e calcular subtotal
+* Após compras:
+** Exibir total
+** Aplicar cupom "DESC20" para 20% de desconto, se informado
+* Simular pagamento:
+** Verificar se valor pago é suficiente
+** Calcular e exibir troco
+* Emitir nota final da compra
 
-33. Simulador de RH com Cadastro e Férias
+== 🧠 3. Simulador de RH com Cadastro e Férias
 
-* Menu: \[1] Cadastrar, \[2] Calcular férias, \[3] Listar, \[4] Sair
-* Funcionário: nome, matrícula, salário (>1000)
-* Férias: salário + 1/3
-* Operações até sair
+* Menu:
+** [1] Cadastrar funcionário
+** [2] Calcular férias
+** [3] Listar cadastros
+** [4] Sair
+* Cadastro:
+** Nome
+** Matrícula
+** Salário (validar se > R$1000)
+* Cálculo de férias:
+** Mostrar lista de funcionários
+** Solicitar matrícula
+** Calcular férias: salário + 1/3 do salário
+* Repetir operações até "Sair"
 
-34. Sistema de Votação com Verificação de CPF
+== 🧠 4. Sistema de Votação com Verificação de CPF
 
-* CPF deve ter 11 dígitos e não pode repetir
-* Candidatos: A, B, C
-* Menu: votar, ver parcial, encerrar
-* Resultado: votos por candidato, vencedor ou empate
+* Cadastrar votos para candidatos: A, B, C
+* Validações:
+** CPF com 11 dígitos
+** CPF não pode votar mais de uma vez
+* Menu:
+** Votar
+** Ver resultado parcial
+** Encerrar votação
+* Ao encerrar:
+** Total de votos por candidato
+** Mostrar vencedor ou indicar empate
 
-35. Controle Financeiro Pessoal
+== 🧠 5. Simulador de Controle Financeiro Pessoal
 
-* Menu: \[1] Receita, \[2] Despesa, \[3] Relatório, \[4] Sair
-* Registro: valor positivo, descrição, data
-* Relatório: total de receitas, despesas, saldo
-* Múltiplos lançamentos
+* Menu:
+** [1] Registrar receita
+** [2] Registrar despesa
+** [3] Relatório mensal
+** [4] Sair
+* Receita e despesa:
+** Valor, data, descrição
+** Validar valores positivos
+* Relatório:
+** Total de receitas
+** Total de despesas
+** Saldo atual (receitas - despesas)
+* Permitir múltiplos registros
 
-36. Sistema de Agendamento de Consultas
+== 🧠 6. Sistema de Agendamento de Consultas
 
-* Menu: \[1] Agendar, \[2] Ver agenda, \[3] Cancelar, \[4] Sair
-* Dados: nome, especialidade, dia e horário
-* Validar se horário está ocupado
-* Cancelar por nome
+* Menu:
+** [1] Agendar consulta
+** [2] Ver agenda
+** [3] Cancelar consulta
+** [4] Sair
+* Para agendar:
+** Nome, especialidade, dia e horário
+** Verificar se o horário já está ocupado
+* Ver agenda: listar todos os agendamentos
+* Cancelar: buscar pelo nome e remover agendamento
 
-37. Cadastro de Veículos com Classificação
+== 🧠 7. Cadastro de Veículos com Classificação
 
-* Menu: \[1] Cadastrar, \[2] Listar, \[3] Sair
-* Veículo: placa, modelo, ano, tipo
-* Classificação: <2000 = Antigo, ≥2020 = Novo, senão = Neutro
+* Menu:
+** [1] Cadastrar veículo
+** [2] Listar veículos
+** [3] Sair
+* Dados do veículo:
+** Placa, modelo, ano, tipo (passeio, carga, moto)
+* Classificação por ano:
+** < 2000 = "Antigo"
+** ≥ 2020 = "Novo"
+** Senão = "Sem classificação"
+* Listar veículos com modelo, ano e classificação
 
-38. Sistema de Biblioteca com Empréstimo
+== 🧠 8. Sistema de Biblioteca com Empréstimo
 
-* Menu: \[1] Cadastrar livro, \[2] Emprestar, \[3] Devolver, \[4] Relatório, \[5] Sair
-* Dados: título, autor, código
-* Emprestar: validar disponibilidade
-* Relatório: listar todos os livros e seu status
+* Menu:
+** [1] Cadastrar livro
+** [2] Emprestar
+** [3] Devolver
+** [4] Relatório
+** [5] Sair
+* Cadastro:
+** Título, autor, código
+* Empréstimo:
+** Verificar disponibilidade do livro
+** Marcar como emprestado
+* Devolução:
+** Informar código do livro
+** Atualizar status
+* Relatório:
+** Listar livros com status (disponível ou emprestado)
 
-39. Simulador de Restaurante
+== 🧠 9. Simulador de Restaurante com Pedido e Conta Final
 
-* Menu de pratos com preço
-* Pedido por prato e quantidade
-* Adicionar múltiplos itens
-* Total com 10% taxa de serviço
-* Pagamento com troco
+* Menu com pratos (nome e preço)
+* Cliente escolhe prato e quantidade
+* Permitir adicionar múltiplos itens
+* Ao finalizar:
+** Exibir todos os itens consumidos
+** Calcular total da conta com 10% de taxa de serviço
+** Simular pagamento: verificar valor e calcular troco
 
-40. Atendimento Prioritário
+== 🧠 10. Sistema de Atendimento Prioritário
 
-* Menu: \[1] Gerar senha, \[2] Atender, \[3] Ver fila, \[4] Sair
-* Gerar: nome e tipo (prioritário > 60 anos ou comum)
-* Atendimento: 2 prioritários para cada comum
-* Manter fila até sair
+* Menu:
+** [1] Gerar senha
+** [2] Atender cliente
+** [3] Ver fila de espera
+** [4] Sair
+* Geração de senha:
+** Nome e tipo:
+*** [1] Prioritário (idade > 60)
+*** [2] Comum
+* Atendimento:
+** Atender 2 prioritários para cada 1 comum (alternadamente)
+** Exibir senha atendida
+* Manter fila até usuário encerrar
 
 == 🔷 Etapa 5: Desafios Completos com Integração de Lógicas
 
