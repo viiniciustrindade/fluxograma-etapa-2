@@ -83,3 +83,113 @@ Crie um fluxograma que:
 ** Total de aprovados e reprovados.
 ** Nome dos aprovados.
 ** Média de notas da turma.
+
+
+== 6. Sistema de Locação de Bicicletas
+
+* Perguntar quantas locações serão feitas.
+* Para cada locação:
+** Solicitar nome do cliente, quantidade de horas e tipo de bicicleta (simples ou elétrica).
+** Tarifas:
+*** Simples: R$ 5 por hora.
+*** Elétrica: R$ 10 por hora.
+** Calcular o valor da locação.
+* Ao final, mostrar o total arrecadado e a quantidade de locações por tipo de bicicleta.
+
+
+== 7. Calculadora de Combustível Ideal
+
+Crie um fluxograma que:
+
+1. Solicita o preço do litro de álcool.
+2. Solicita o preço do litro de gasolina.
+3. Calcula o valor da razão (álcool / gasolina).
+4. Se o resultado for ≤ 0.7, exibe: "Abasteça com Álcool".
+5. Senão, exibe: "Abasteça com Gasolina".
+6. Solicita a quantidade de litros a abastecer.
+7. Calcula o valor total com o combustível ideal.
+8. Solicita o valor pago pelo cliente.
+9. Calcula o troco.
+10. Exibe o troco e encerra.
+
+
+== 8. Simulador de Festa do Pijama
+
+Crie um fluxograma que:
+
+1. Pergunta o nome do participante.
+2. Pergunta se ele trouxe pijama (S/N).
+3. Se não trouxe, exibe: "Sem pijama, sem festa!" e encerra.
+4. Pergunta a idade.
+5. Se idade < 6 ou > 13, exibe: "Idade fora da faixa permitida!" e encerra.
+6. Pergunta se trouxe lanche (S/N).
+7. Se sim, exibe: "Bem-vindo! Vá para a sala de jogos!".
+8. Se não, exibe: "Pegue uma senha para lanche comunitário!".
+9. Exibe: "Filme começa às 20h!".
+10. Finaliza o programa.
+
+
+== 9. Avaliador de Bicho Virtual
+
+Crie um fluxograma que:
+
+1. Pergunta o nome do bicho virtual.
+2. Pergunta sua idade (em dias).
+3. Pergunta o nível de fome (0 a 10).
+4. Pergunta o nível de diversão (0 a 10).
+5. Se fome ≥ 8, exibe: "Seu bichinho está faminto!".
+6. Se diversão ≤ 3, exibe: "Seu bichinho está entediado!".
+7. Se fome < 8 e diversão > 3, exibe: "Seu bichinho está feliz!".
+8. Calcula um “índice de felicidade” = 10 - fome + diversão.
+9. Exibe o índice de felicidade.
+10. Pergunta se deseja avaliar outro bichinho.
+
+
+== 10. Gerador de Personagem de RPG
+
+Crie um fluxograma que:
+
+1. Pergunta o nome do jogador.
+2. Escolhe a classe (Guerreiro, Mago, Arqueiro).
+3. Pergunta o nível de experiência (1 a 10).
+4. Atribui pontos de vida com base na classe.
+5. Atribui ataque com base na classe e experiência.
+6. Atribui defesa com base na experiência.
+7. Calcula o poder total = ataque + defesa.
+8. Exibe todos os atributos do personagem.
+9. Classifica o personagem:
+** < 20 = Fraco, 20-40 = Médio, > 40 = Forte.
+10. Pergunta se deseja criar outro personagem.
+
+== 11. Sistema de Verificação de Senha Segura
+
+Crie um fluxograma que:
+
+1. Solicita ao usuário que digite uma senha.
+2. Verifica se a senha tem pelo menos 8 caracteres.
+3. Verifica se possui letra maiúscula.
+4. Verifica se possui número.
+5. Verifica se possui caractere especial (ex: !@#).
+6. Para cada falha, mostra uma dica de como melhorar.
+7. Se todas as condições forem atendidas, exibe: "Senha segura!".
+8. Pergunta se deseja testar outra senha (S/N).
+9. Se sim, repete o processo.
+10. Se não, encerra o programa.
+
+== 12. Gerador de Tabela de Multiplicação com Intervalo
+
+Crie um fluxograma que:
+
+1. Solicita um número inicial.
+2. Solicita um número final (maior que o inicial).
+3. Valida o intervalo (inicial < final).
+4. Para cada número no intervalo:
+   - Gera e exibe a tabuada de 1 a 10.
+5. Se o número for par, marca com "*" (extra visual).
+6. Repete até o número final.
+7. Exibe: "Tabelas geradas com sucesso".
+8. Pergunta se deseja repetir com novo intervalo.
+9. Se sim, repete todo o processo.
+10. Se não, encerra.
+
+
